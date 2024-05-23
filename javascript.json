@@ -11,7 +11,7 @@
 		"body": [
 			"export { ${1:something} } from \"./${1:something}\";"
 		],
-		"description": "Reexport default value from file in folder.",
+		"description": "Reexport value from file in folder.",
 	},
 	"new react component": {
 		"prefix": ["rc"],
