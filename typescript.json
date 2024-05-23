@@ -1,27 +1,27 @@
 {
 	"re export default": {
-		"prefix": ["expd"],
+		"prefix": ["expd", "export-default"],
 		"body": [
 			"export { default as ${1:something} } from \"./${1:something}\";"
 		],
 		"description": "Reexport default value from file in folder.",
 	},
 	"re export": {
-		"prefix": ["exp"],
+		"prefix": ["exp", "export"],
 		"body": [
 			"export { ${1:something} } from \"./${1:something}\";"
 		],
 		"description": "Reexport value from file in folder.",
 	},
 	"re export default type": {
-		"prefix": ["expdt"],
+		"prefix": ["expdt", "export-default-type"],
 		"body": [
 			"export type { default as ${1:something} } from \"./${1:something}\";"
 		],
 		"description": "Reexport default type from file in folder.",
 	},
 	"re export type": {
-		"prefix": ["expt"],
+		"prefix": ["expt", "export-type"],
 		"body": [
 			"export type { ${1:something} } from \"./${1:something}\";"
 		],
