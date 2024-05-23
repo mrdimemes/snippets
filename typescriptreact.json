@@ -1,0 +1,27 @@
+{
+	"new react component": {
+		"prefix": ["rc", "react-component"],
+		"body": [
+			"const ${1:Component} = () => {",
+			"  return (",
+			"    <div>${1:Component}</div>",
+			"  );",
+			"};\n\n",
+			"export default ${1:Component};\n"
+		],
+		"description": "Create new react component",
+	},
+	"new react component with props": {
+		"prefix": ["rcp", "react-component-props"],
+		"body": [
+			"import { Props } from \"./types\";\n\n",
+			"const ${1:Component} = ({ ${2} }: Props) => {",
+			"  return (",
+			"    <div>${1:Component}</div>",
+			"  );",
+			"};\n\n",
+			"export default ${1:Component};\n"
+		],
+		"description": "Create new react component with props",
+	},
+}
