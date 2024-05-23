@@ -1,20 +1,20 @@
 {
 	"re export default": {
-		"prefix": ["expd"],
+		"prefix": ["expd", "export-default"],
 		"body": [
 			"export { default as ${1:something} } from \"./${1:something}\";"
 		],
 		"description": "Reexport default value from file in folder.",
 	},
 	"re export": {
-		"prefix": ["exp"],
+		"prefix": ["exp", "export"],
 		"body": [
 			"export { ${1:something} } from \"./${1:something}\";"
 		],
 		"description": "Reexport value from file in folder.",
 	},
 	"new react component": {
-		"prefix": ["rc"],
+		"prefix": ["rc", "react-component"],
 		"body": [
 			"const ${1:Component} = () => {",
 			"  return (",
@@ -24,5 +24,6 @@
 			"export default ${1:Component};\n"
 		],
 		"description": "Create new react component",
+		"isFileTemplate": true,
 	},
 }
