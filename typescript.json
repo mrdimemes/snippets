@@ -27,4 +27,32 @@
 		],
 		"description": "Reexport type from file in folder.",
 	},
+	"new test suite": {
+		"prefix": ["ts", "test-suite"],
+		"body": [
+			"describe(\"${1:Test suite}\", () => {\n",
+			"  test(\"${2:Should pass}\", () => {",
+			"    ${3}",
+			"  });\n",
+			"});\n"
+		],
+		"description": "Create new test suite",
+		"isFileTemplate": true,
+	},
+	"new test case": {
+		"prefix": ["tc", "test-case"],
+		"body": [
+			"test(\"${1:Should pass}\", () => {",
+			"  ${2}",
+			"});"
+		],
+		"description": "Create new test case",
+	},
+	"reset all mocks (jest)": {
+		"prefix": ["rm", "reset-mocks"],
+		"body": [
+			"beforeEach(() => jest.resetAllMocks());",
+		],
+		"description": "Reset all mocks before every test case",
+	},
 }
