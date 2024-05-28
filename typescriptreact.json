@@ -26,4 +26,19 @@
 		"description": "Create new react component with props",
 		"isFileTemplate": true,
 	},
+	"react component test suite": {
+		"prefix": ["rts", "react-test-suite"],
+		"body": [
+			"import { render, screen } from \"@testing-library/react\";\n",
+			"import { ${1:Component} } from \".\";\n\n",
+			"describe(\"${1:Component} component\", () => {\n",
+			"  test(\"Component renders\", () => {",
+			"    render(<${1:Component} />);",
+			"    expect(screen.getByText(\"${2}\")).toBeInTheDocument();",
+			"  });\n",
+			"});\n"
+		],
+		"description": "Create new test suite for the react component",
+		"isFileTemplate": true,
+	},
 }
